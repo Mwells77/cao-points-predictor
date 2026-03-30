@@ -86,15 +86,6 @@ def make_chart(rec: dict) -> go.Figure:
         ci_lo = pred["ci_lower"]
         ci_hi = pred["ci_upper"]
 
-        # Dashed line from last point to prediction
-        last_x = max(years)
-        last_y = next(p for y, p, a in reversed(list(zip(years, pts, anom))) if not a)
-        fig.add_trace(go.Scatter(
-            x=[last_x, 2026], y=[last_y, pe], mode="lines",
-            line=dict(color="#7c3aed", width=1.5, dash="dash"),
-            showlegend=False,
-        ))
-
         # CI shaded band
         fig.add_shape(type="rect", x0=2025.8, x1=2026.2, y0=ci_lo, y1=ci_hi,
                       fillcolor="rgba(124,58,237,0.13)", line_width=0)
