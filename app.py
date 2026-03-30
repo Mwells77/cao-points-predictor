@@ -13,7 +13,7 @@ import streamlit as st
 
 DB_PATH = Path(__file__).parent / "predictor.db"
 
-st.set_page_config(page_title="CAO 2026 Point Predictor", layout="centered")
+st.set_page_config(page_title="CAO 2026 Vibes-Based Points Predictor", layout="centered")
 
 st.markdown("""
 <style>
@@ -146,6 +146,7 @@ TREND_HTML = {
 }
 
 DISCLAIMER = (
+    "<b>DISCLAIMER:</b> "
     "Predictions use weighted Huber regression on CAO end-of-season points "
     "from 2017–2025, with recent years given extra weight. "
     "The 2026 estimate accounts for the government's confirmed post-marking "
@@ -159,7 +160,9 @@ DISCLAIMER = (
 
 
 def main():
-    st.title("CAO 2026 Point Predictor")
+    st.title("CAO 2026 Vibes-Based Points Predictor")
+
+    st.markdown(f'<div class="disc">{DISCLAIMER}</div>', unsafe_allow_html=True)
 
     if not ensure_db():
         return
@@ -215,8 +218,6 @@ def main():
     # ── Chart ──
     st.plotly_chart(make_chart(rec), use_container_width=True)
 
-    # ── Disclaimer ──
-    st.markdown(f'<div class="disc">{DISCLAIMER}</div>', unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
