@@ -147,7 +147,7 @@ TREND_HTML = {
 
 DISCLAIMER = (
     "<b>DISCLAIMER:</b><br>"
-    "Predictions will be wrong. This app is vibecoded ai slop — do not base any meaningful decisions off of it."
+    "Predictions will be wrong. This app is vibecoded ai slop that I made for fun. I don't even know how it works — do not base any meaningful decisions off of it."
     "<br><br>"
     "Predictions use weighted Huber regression on CAO end-of-season points "
     "from 2017–2025, with recent years given extra weight. "
