@@ -152,6 +152,9 @@ DISCLAIMER = (
     "grade deflation (aggregate results expected just below 2020 levels). "
     "These are statistical estimates — actual August cut-offs depend on "
     "application demand, CAO offer rounds, and the final LC results."
+    "<br><br>"
+    "*Predictions will be wrong. This app is vibecoded ai slop — do not base "
+    "any meaningful decisions off of this."
 )
 
 
