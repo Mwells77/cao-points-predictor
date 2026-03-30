@@ -146,16 +146,15 @@ TREND_HTML = {
 }
 
 DISCLAIMER = (
-    "<b>DISCLAIMER:</b> "
+    "<b>DISCLAIMER:</b><br>"
+    "Predictions will be wrong. This app is vibecoded ai slop — do not base any meaningful decisions off of it."
+    "<br><br>"
     "Predictions use weighted Huber regression on CAO end-of-season points "
     "from 2017–2025, with recent years given extra weight. "
     "The 2026 estimate accounts for the government's confirmed post-marking "
     "grade deflation (aggregate results expected just below 2020 levels). "
     "These are statistical estimates — actual August cut-offs depend on "
     "application demand, CAO offer rounds, and the final LC results."
-    "<br><br>"
-    "*Predictions will be wrong. This app is vibecoded ai slop — do not base "
-    "any meaningful decisions off of this."
 )
 
 
